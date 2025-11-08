@@ -1,47 +1,47 @@
 import type { Portfolio } from "@/lib/types";
 
 const PORTFOLIO_DATA: Portfolio = {
-	name: "Your Name Here",
-	headline: "Aspiring Innovator | Full-Stack Developer | AI Enthusiast",
-	bio: "A results-driven computer science student at [Your University] with a passion for building disruptive, scalable, and user-centric applications. Eager to leverage modern technologies to solve real-world problems and drive impactful change. Currently seeking high-growth internship opportunities for Summer 202X.",
+	name: "Daniel Magidov",
+	headline: "Full-Stack Developer | AI & Cybersecurity Enthusiast | UCLA CS Student",
+	bio: "Computer Science student at UCLA's Henry Samueli School of Engineering. Passionate about building full-stack applications, AI-powered tools, and cybersecurity solutions. Experienced in Python, JavaScript, Node.js, and React. Currently seeking impactful internship opportunities to expand my technical expertise and contribute to real-world projects.",
 
 	// Your contact email
-	email: "hello@yourdomain.com",
+	email: "danielmagidov@gmail.com",
 
 	// Add your links here
-	// Supported icons: 'GitHub', 'LinkedIn', 'Twitter', 'Blog'
 	links: [
-		{ name: "GitHub", url: "https" },
-		{ name: "LinkedIn", url: "https" },
-		{ name: "Twitter", url: "https" },
-		// { name: "Blog", url: "https://yourblog.com" },
+		{ name: "GitHub", url: "https://github.com/DM-Coderas" },
+		{ name: "LinkedIn", url: "https://linkedin.com/in/daniel-magidov-a0a213294" },
+		// { name: "Twitter", url: "https://twitter.com/..." }, // optional
 	],
 
 	// Add your skills here
 	skills: [
-		"JavaScript", "TypeScript", "React", "Next.js", "Node.js",
-		"Python", "Go", "Tailwind CSS", "Firebase", "AWS", "Docker", "Kubernetes"
+		"Python", "JavaScript", "TypeScript", "Java", "C++", "SQL", "Powershell", "Bash",
+		"React", "Node.js", "FastAPI",
+		"Git", "Docker", "Google Cloud Platform", "AWS", "VS Code", "Cursor",
+		"pandas", "NumPy", "Matplotlib"
 	],
 
 	// Add your projects here
 	projects: [
 		{
-			title: "Project 'Synergy'",
-			description: "A decentralized, AI-powered platform to streamline cross-functional team collaboration using a novel blockchain consensus algorithm. Built with a microservices architecture.",
-			stack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Vercel"],
+			title: "AI Application (In Development)",
+			description: "Full-stack app integrating AI models, APIs, and authorization files. Developed backend processes and legal/ethical marketplace scrapers that reduced scraping time by 300% and costs by 50%.",
+			stack: ["Node.js", "Python", "React", "APIs"],
 			githubLink: "",
 			liveLink: "",
 		},
 		{
-			title: "VibeCheck",
-			description: "A mobile-first social app that uses sentiment analysis to curate positive news feeds. Leveraged serverless functions for infinite scalability and low-cost operation.",
-			stack: ["React Native", "Firebase", "Google Cloud Functions", "NLP.js"],
-			githubLink: "",
+			title: "Python Pentester Toolkit",
+			description: "A GitHub library of 50+ quick-to-run Python scripts for penetration testing, covering OSINT, data collection, and exploitation. Demonstrates knowledge of vulnerabilities across all network layers.",
+			stack: ["Python", "Git"],
+			githubLink: "https://github.com/DM-Coderas",
 			liveLink: "",
 		},
 		{
 			title: "AlgoVisualizer",
-			description: "A web-based tool for visualizing complex data structures and algorithms, built to help students (like me) understand core CS concepts in an interactive way.",
+			description: "Web-based tool for visualizing complex data structures and algorithms to help students understand CS concepts interactively.",
 			stack: ["TypeScript", "React", "D3.js"],
 			githubLink: "",
 			liveLink: "",
@@ -51,35 +51,35 @@ const PORTFOLIO_DATA: Portfolio = {
 	// Add your experience here
 	experience: [
 		{
-			role: "Software Engineer Intern (Incoming)",
-			company: "Big Tech Co / FAANG",
-			date: "Summer 202X",
-			location: "Menlo Park, CA (Remote)",
-			description: "Selected for a highly competitive internship program. Will be joining the [Cloud/AI/Growth] team to work on high-impact, customer-facing features."
+			role: "Full Stack Developer (Co-Lead), AI Application",
+			company: "Milyon LLC",
+			date: "Aug. 2025 – Present",
+			location: "Remote",
+			description: "Lead backend development integrating AI models, APIs, and authorization files. Built marketplace scrapers reducing scraping time by 300% and costs by 50%. Negotiated with companies for proxy access and pricing."
 		},
 		{
-			role: "Club President / Co-Founder",
-			company: "[Your Vibe-Coding Club Name]",
-			date: "Aug 202X - Present",
-			location: "[Your University]",
-			description: "Grew the organization from 5 to 200+ members by fostering a culture of innovation and 'vibecoding.' Organized tech talks with industry leaders from Google, Meta, and hot startups."
+			role: "General Paid Intern",
+			company: "Kingly Computer Service Center",
+			date: "Summer 2023 & 2024",
+			location: "Los Angeles, CA",
+			description: "Automated Linux and Python solutions to streamline troubleshooting. Managed front desk, performed backups, and repaired hardware, increasing efficiency and gaining 4 new clients."
 		},
 		{
-			role: "Teaching Assistant - Intro to CS",
-			company: "[Your University]",
-			date: "Jan 202X - May 202X",
-			location: "[Your University]",
-			description: "Mentored 50+ students, held office hours, and graded assignments for foundational computer science concepts. Received a 95% positive feedback rating from students."
-		}
+			role: "CyberPatriot Team Lead",
+			company: "Fairfax High School",
+			date: "Sep. 2022 – Mar. 2025",
+			location: "Los Angeles, CA",
+			description: "Led 4-member cybersecurity team to top 10 statewide placement. Configured Windows, Linux, and Cisco systems, created practice plans, and improved team performance from top 30% to top 1%."
+		},
 	],
 
 	// Add any education or awards
 	education: [
 		{
 			degree: "B.S. in Computer Science",
-			institution: "[Your University]",
-			date: "Expected May 202X",
-			note: "Minor in [e.g., Business, Data Science]"
+			institution: "University of California, Los Angeles",
+			date: "Sep. 2025 – June 2029",
+			note: "Henry Samueli School of Engineering and Applied Sciences, Coursework: Math31A, CS31; Clubs: ACM.AI, ACM.Cyber, Bruin Software Engineers"
 		},
 		{
 			degree: "Best 'Vibe' Hack",

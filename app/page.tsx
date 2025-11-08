@@ -16,20 +16,20 @@ const IconMap: {
 
 export default function Home() {
 	return (
-		<div className="font-geist-sans antialiased bg-gray-950 text-gray-200 min-h-screen">
-			<div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
+		<div className="font-geist-sans antialiased bg-gray-900 text-gray-200 min-h-screen">
+			<div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
 
 				{/* Header/Nav */}
 				<header className="flex justify-between items-center py-6">
-					<div className="text-2xl font-bold text-white">
+					<div className="text-2xl font-bold text-blue-400">
 						{portfolioData.name.split(' ').map(n => n[0]).join('')}
 					</div>
 					<nav className="flex items-center space-x-4">
-						<Link href="#projects" className="text-gray-400 hover:text-white transition-colors">Projects</Link>
-						<Link href="#experience" className="text-gray-400 hover:text-white transition-colors">Experience</Link>
+						<Link href="#projects" className="text-gray-400 hover:text-blue-400 transition-colors">Projects</Link>
+						<Link href="#experience" className="text-gray-400 hover:text-blue-400 transition-colors">Experience</Link>
 						<Link
 							href={`mailto:${portfolioData.email}`}
-							className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+							className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
 						>
 							Contact Me
 						</Link>
@@ -59,7 +59,7 @@ export default function Home() {
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label={link.name}
-										className="text-gray-400 hover:text-white transition-colors"
+										className="text-gray-400 hover:text-blue-400 transition-colors"
 									>
 										<Icon className="w-6 h-6" />
 									</Link>
@@ -68,7 +68,7 @@ export default function Home() {
 							<Link
 								href={`mailto:${portfolioData.email}`}
 								aria-label="Email"
-								className="text-gray-400 hover:text-white transition-colors"
+								className="text-gray-400 hover:text-blue-400 transition-colors"
 							>
 								<Mail className="w-6 h-6" />
 							</Link>
@@ -84,7 +84,7 @@ export default function Home() {
 							{portfolioData.skills.map((skill) => (
 								<span
 									key={skill}
-									className="bg-gray-800 text-blue-300 px-4 py-2 rounded-full text-sm font-medium"
+									className="bg-gray-800 text-blue-400 px-4 py-2 rounded-full text-sm font-medium"
 								>
 									{skill}
 								</span>
@@ -131,7 +131,7 @@ export default function Home() {
 				</main>
 
 				{/* Footer */}
-				<footer className="text-center text-gray-500 py-12 mt-12">
+				<footer className="text-center text-gray-400 py-12 mt-12">
 					© {new Date().getFullYear()} {portfolioData.name}.
 					Built with React & Tailwind.
 				</footer>
@@ -143,7 +143,7 @@ export default function Home() {
 // Sub-component for Project Cards
 function ProjectCard({ project }: { project: Project }) {
 	return (
-		<div className="bg-gray-900 rounded-xl overflow-hidden shadow-lg border border-gray-800 transition-all hover:shadow-blue-900/20 hover:border-gray-700">
+		<div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 transition-all hover:shadow-blue-600/40 hover:border-blue-400">
 			<div className="p-6">
 				<h3 className="text-xl font-bold text-white">{project.title}</h3>
 				<p className="mt-3 text-gray-300 text-base">{project.description}</p>
@@ -151,7 +151,7 @@ function ProjectCard({ project }: { project: Project }) {
 					{project.stack.map((tech) => (
 						<span
 							key={tech}
-							className="bg-gray-800 text-blue-300 px-3 py-1 rounded-full text-xs font-medium"
+							className="bg-gray-700 text-blue-400 px-3 py-1 rounded-full text-xs font-medium"
 						>
 							{tech}
 						</span>
@@ -163,7 +163,7 @@ function ProjectCard({ project }: { project: Project }) {
 							href={project.githubLink}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center text-gray-400 hover:text-white transition-colors"
+							className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
 						>
 							<Github className="w-5 h-5 mr-1" />
 							Code
@@ -174,7 +174,7 @@ function ProjectCard({ project }: { project: Project }) {
 							href={project.liveLink}
 							target="_blank"
 							rel="noopener noreferrer"
-							className="flex items-center text-gray-400 hover:text-white transition-colors"
+							className="flex items-center text-gray-400 hover:text-blue-400 transition-colors"
 						>
 							<ExternalLink className="w-5 h-5 mr-1" />
 							Live Demo
@@ -191,13 +191,13 @@ function ExperienceItem({ exp }: { exp: Experience }) {
 	return (
 		<div className="flex">
 			<div className="shrink-0 mr-4">
-				<span className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-800 border border-gray-700">
+				<span className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-700 border border-gray-600">
 					<Briefcase className="w-5 h-5 text-blue-400" />
 				</span>
 			</div>
 			<div className="grow">
 				<h3 className="text-lg font-bold text-white">{exp.role}</h3>
-				<p className="text-blue-300 font-medium">{exp.company}</p>
+				<p className="text-blue-400 font-medium">{exp.company}</p>
 				<div className="flex flex-wrap text-sm text-gray-400 mt-1 space-x-4">
 					<span className="flex items-center">
 						<Calendar className="w-4 h-4 mr-1.5" />
@@ -221,13 +221,13 @@ function EducationItem({ edu }: { edu: Education }) {
 	return (
 		<div className="flex">
 			<div className="shrink-0 mr-4">
-				<span className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-800 border border-gray-700">
+				<span className="flex items-center justify-center h-10 w-10 rounded-full bg-gray-700 border border-gray-600">
 					<Award className="w-5 h-5 text-blue-400" />
 				</span>
 			</div>
 			<div className="grow">
 				<h3 className="text-lg font-bold text-white">{edu.degree}</h3>
-				<p className="text-blue-300 font-medium">{edu.institution}</p>
+				<p className="text-blue-400 font-medium">{edu.institution}</p>
 				<p className="text-sm text-gray-400 mt-1">{edu.date}</p>
 				{edu.note && <p className="mt-2 text-gray-300">{edu.note}</p>}
 			</div>
