@@ -36,7 +36,7 @@ const PORTFOLIO_DATA: Portfolio = {
 			title: "Python Pentester Toolkit",
 			description: "A GitHub library of 50+ quick-to-run Python scripts for penetration testing, covering OSINT, data collection, and exploitation. Demonstrates knowledge of vulnerabilities across all network layers.",
 			stack: ["Python", "Git"],
-			githubLink: "https://github.com/DM-Coderas",
+			githubLink: "https://github.com/DM-Coderas/Python-Penetration-Tools",
 			liveLink: "",
 		},
 		{
